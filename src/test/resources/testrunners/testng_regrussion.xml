@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test" parallel="tests" thread-count="1" verbose="4">
+
+	<listeners>
+		<listener
+			class-name="com.qa.opencart.listeners.ExtentReportListener" />
+
+	</listeners>
+
+	<test name="login Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+
+		</classes>
+	</test>
+	
+		<test name="Account Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.AccountPageTest" />
+
+		</classes>
+	</test>
+
+
+</suite>
